@@ -1,0 +1,17 @@
+{
+    "name": "esp-protocols-Omote",
+    "version": "1.0.0",
+    "description": "An fork of esp-protocols to help with omote development",
+    "build": {
+      
+      "srcFilter": [
+        "+<components/esp_websocket_client/esp_websocket_client.c>"
+      ],
+      "includeDir": ".",
+        "flags": [
+            "-I components/esp_websocket_client/include"
+        ]
+    },
+    "frameworks": "*",
+    "platforms": "espressif32"
+  }
